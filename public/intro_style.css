@@ -1,0 +1,140 @@
+/* General Body Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #00a1e5, #003366); /* Modern gradient background */
+  color: white;
+  font-family: 'Poppins', sans-serif; /* Cleaner modern font */
+  padding: 0;
+  margin: 0;
+  height: 100vh; /* Full height to center content vertically */
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Container Styling for Welcome Page */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1); /* Frosted glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+/* Header Styling */
+h1 {
+  font-size: 3rem; /* Prominent font size */
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; /* Clean and modern font */
+  color: #ffcc00; /* Golden text for highlight */
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
+  animation: bounce 1.5s ease-in-out infinite; /* Smooth bouncing effect */
+}
+
+/* Bouncing Animation for Title */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1.5rem; /* Increased font size for better readability */
+  margin-bottom: 20px; /* Space below paragraphs */
+  color: #f0f0f0; /* Slightly muted white for contrast */
+  line-height: 1.8; /* Increased line height for readability */
+  text-align: justify; /* Justified text for cleaner alignment */
+  max-width: 100%;
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+
+/* Play Button Styling */
+.play-button {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffcc00, #f1a800); /* Gradient for the button */
+  color: #003366; /* Contrast text color */
+  border: none;
+  padding: 15px 30px; /* Balanced padding */
+  font-size: 1.5rem; /* Larger text for the button */
+  border-radius: 30px; /* Fully rounded button */
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease; /* Smooth hover transition */
+  margin-top: 30px;
+  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.5); /* Glow effect */
+}
+
+/* Hover Effect for Play Button */
+.play-button:hover {
+  background: linear-gradient(135deg, #f1a800, #d4a100); /* Darker gradient on hover */
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0 12px 25px rgba(255, 204, 0, 0.7); /* Brighter glow on hover */
+}
+
+/* Pulsing Animation for Play Button */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+  p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+  .play-button {
+    padding: 12px 25px; /* Adjust button padding */
+    font-size: 1.3rem; /* Smaller button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem; /* Further reduced for very small screens */
+  }
+  p {
+    font-size: 0.9rem; /* Smaller font for better fit */
+  }
+  .play-button {
+    padding: 10px 20px; /* Smaller button size */
+    font-size: 1rem; /* Small font for very small screens */
+  }
+}
