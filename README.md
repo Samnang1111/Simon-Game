@@ -5,7 +5,7 @@ Simon Game is a fun and interactive memory game where players must repeat a sequ
 
 ---
 
-### [Play the Game Here! 🌐](https://samnang1111.github.io/Simon-Game/game.html)  
+### [Play the Game Here! 🌐](https://samnang1111.github.io/Simon-Game/)
 
 ---
 
